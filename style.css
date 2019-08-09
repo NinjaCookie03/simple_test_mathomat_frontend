@@ -1,0 +1,494 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: whitesmoke;
+    color: #484848;
+    width: 800px;
+    height: 480px;
+    cursor: none;
+}
+
+a {
+    text-decoration: none;
+    color: #484848
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    background: none;
+}
+
+.product{
+    position: relative;
+    width: 272px;
+    height: 182px;
+    background-image: url("img/tile.png");
+    display: inline-block;
+}
+
+.money_button{
+    position: relative;
+    width: 200px;
+    height: 65px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px lightgray; 
+    margin: 15px;
+    display: inline-block;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.product_image_container {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    height: 100px;
+}
+
+.product_image {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    height: 100px;
+}
+
+.bobel {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 230px;
+}
+
+.bobel > img {
+    display: 'none';
+}
+
+.product_count {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    top: 9px;
+    left: 8px;
+    width: 25px;
+}
+
+.product > h1{
+    position: absolute;
+    width: 175px;
+    top: 20px;
+    left: 80px;
+    text-align: left;
+    vertical-align: text-bottom;
+}
+
+.product > h2 {
+    position: absolute;
+    width: 200px;
+    top: 95px;
+    left: 80px;
+    text-align: left;
+}
+
+.product > button {
+    background: transparent;
+    width: 250px;
+    height: 160px;
+    border: 0px;
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    border-radius: 10px;
+}
+
+.product_remove_button {
+    display: none;
+    background: red;
+    position: absolute;
+    bottom: 11px;
+    right: 11px;
+    width: 80px;
+    height: 60px;
+    border-radius: 0px 0px 10px 0px;
+    align-content: center;
+}
+
+.product_remove_button > img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.line{
+    flex: 0 0 auto;
+}
+
+.money_button_line{
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    margin-left: -50px;
+    float:left;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.bottom_button {
+    position: absolute;
+    bottom: 0px;
+    width: 257px;
+    height: 49px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.bottom_button_left {
+    left: 0px;
+}
+
+.bottom_button_right {
+    right: 0px;
+}
+
+.bottom_button_left > span {
+    position: absolute;
+    bottom: 7px;
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+.bottom_button_right > span {
+    position: absolute;
+    bottom: 7px;
+    left: 55%;
+    transform: translateX(-50%);
+}
+
+#button_logout {
+    background-image: url(img/logout_button.png);  
+}
+
+#button_buy {
+    background-image: url(img/buy_button.png);
+}
+
+#cancel_registration {
+    background-image: url(img/logout_button.png);  
+}
+
+#accept_registration {
+    background-image: url(img/buy_button.png);
+}
+
+#back{
+    border-bottom: 1px solid lightgray;
+}
+
+#back > img{
+    width: 80px;
+    margin: 10px;
+}
+
+#balance > h2{
+    font-size: 20px;
+}
+
+#balance > span{
+    font-size: 25px;
+}
+
+#top {
+    position: relative;
+    height: 40px;
+}
+
+#bottom {
+    position: fixed;
+    bottom: 0px;
+    height: 49px;
+    width:100%;
+}
+
+#notch {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 200px;
+    right: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/notch.png);
+    color: #484848;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+#balance {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+#button_deposit {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.counter {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: #009688;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0;
+    font-size: 30px;
+    line-height: 30px;
+    filter: drop-shadow(0px 0px 5px lightgray)
+}
+
+::-webkit-scrollbar {
+    display:none;
+}
+
+#money_page_center {
+    width: 300px;
+    float: left;
+    margin-left:20px;
+}
+
+#add_money_page {
+    display:flex;
+}
+
+#numpad {
+    display:inline;
+    float:right;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+#numpad > tbody {
+    box-shadow: 0px 0px 15px lightgray; 
+}
+
+.npb {
+    width: 80px;
+    height: 65px;
+    background-color: white;
+    font-size:35px;
+}
+
+.reset_button {
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    font-size:35px;   
+}
+
+.delete_button {
+    width: 80px;
+    height: 35px;
+    background-color: white;
+    font-size: 40px;
+    text-align: right;
+    padding-right: 55px;
+    padding-top: -5px;
+}
+
+#dagobert {
+    margin-top:60px;
+}
+
+#ok_button {
+    color: white;
+    background-color:#009688;
+    width: 80px;
+    height: 65px;
+    font-size:35px;
+}
+
+#cancel_button {
+    color: white;
+    background-color:#ff5722;
+    width: 80px;
+    height: 65px;
+    font-size:35px;
+}
+
+#money_display {
+    width: 250px;
+    height: 50px;
+    float: right;
+    background-color: white;
+    font-size: 30px;
+    filter: drop-shadow(0px 0px 5px lightgray);
+    border-radius: 10px;
+    margin-right: 16px;
+    margin-top: 60px;
+    padding-top: 12px;
+}
+
+#loading_screen {
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+    background-color: #00000055
+}
+
+#loading_window {
+    position:fixed;
+    top:50%;
+    left:50%;
+    width: 200px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+}
+
+#loading_circle {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loading_text {
+    position: absolute;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 35px;
+}
+
+#error_screen {
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+    background-color: #0a1afb;
+}
+
+#error_screen > h1 {
+    color: #0a1afb;
+    background-color: #a8a8a8;
+    width: 210px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.eline {
+    color: white;
+    font-family: monospace;
+    font-size: 15px;
+    text-align: left;
+    width: 90%;
+    padding-left: 10%;
+}
+
+#error_first_line {
+    padding-top: 60px;
+}
+
+#error_last_line {
+    text-align: center;
+    width: fit-content;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    padding: 0px;
+}
+
+#error_text {
+    position: absolute;
+    width: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#registration_page > ul {
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#registration_page > ul > li {
+    padding-top: 10px;
+}
+
+#invisible_accept_button {
+    position: absolute;
+    background-color: transparent;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+}
+
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+.ripple:hover {
+    background: transparent radial-gradient(circle, transparent 1%, transparent 1%) center/15000%;
+}
+
+.ripple:active {
+    background-color: #bbbbbb77;
+    background-size: 100%;
+    transition: background 0s;
+}
